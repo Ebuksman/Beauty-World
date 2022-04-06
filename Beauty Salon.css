@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding-top: 2.5rem;
+    padding-left: 7vw;
+    align-items: center;
+    background: transparent;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo h1{
+    font-size: 40px;
+    font-style: italic;
+}
+
+.bars{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+.nav-items{
+    flex: 1 0 auto;
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-left: 10vw;
+    padding-bottom: 0.5rem;    
+}
+
+.nav-items ul li{
+    list-style: none;
+    padding-left: 40px;
+    color: #000;
+    font-weight: 600
+}
+
+.nav-items ul li a{
+    color: #000;
+}
+
+.bg-navbar {
+    width: 100%;
+    background: burlywood;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* BEGINNING OF UPPER SECTION */
+.upper{
+    min-height: 80vh;
+    background: url(./IMAGES/98d4921ef70506f59b9b9dec15cbec78.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 7vw;
+}
+
+.upper-content{
+    display: flex;
+    padding-top: 50px;
+}
+
+.upper-text{
+    padding-top: 30vh;
+    color: none;
+    padding-right: 70px;
+    padding-top: 8vw;
+}
+
+.upper-text h3{
+    padding-top: 30vh;
+    color: palevioletred;
+    padding-right: 70px;
+    padding-top: 1vw;
+    margin-left: 4vw;
+}
+
+.upper-image img{
+    padding-right: 5vw;
+    padding-left: 9vw;
+    padding-top: 5vw;
+    margin-top: 150px 0 0 0;
+    padding-top: 80px 0 0 0;
+    min-height: 70vh;
+}
+
+@media screen and (max-width: 960px) {
+    .upper-content{
+        display: block;
+        padding-left: auto;
+    }
+
+    .upper-image img{
+        justify-self: center;
+        margin-left: -120px;
+        max-width: 100%;
+        max-height: 20vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .upper-image img{
+        max-width: 400px;
+    }
+}
+/* END OF UPPER SECTION */
+
+
+/* BEGINNING OF ABOUT SECTION */
+.about{
+    min-height: 100vh;
+    padding-top: 80px;   
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: cornsilk;   
+}
+
+.about-header h1{
+    text-align: center;
+    font-size: 36px;
+    color: crimson;
+}
+
+.about-text blockquote{
+    line-height: 35px;
+    color: purple;
+    padding: 75px;
+}
+
+.about-image img{
+    justify-self: right;
+    max-height: 80vh;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-right: 40px;
+    background-color: none;
+}
+
+.about h1::after{
+    content: '';
+    background: crimson;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+@media screen and (max-width: 1260px){
+    .about-content{
+        grid-template-columns: 1fr;
+    }
+
+    .about-text blockquote {
+        line-height: 29px;
+        padding-bottom: 0;
+        max-height: 600px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .about{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .about-image img{
+        max-width: 100%;
+        max-height: 500px; 
+    }  
+}
+/* END OF ABOUT SECTION */
+
+
+/* BEGINNING OF "SERVICES" SECTION */
+.services{
+    margin-top: 50px;
+    min-height: 100vh;  
+    background-image: url(./IMAGES/amy-shamblen-xwM61TPMlYk-unsplash.jpg);
+    background-size: cover;  
+}
+
+.services-content{
+    display: flex;
+    padding: 50px;
+    padding-right: 60px;
+    padding-top: 20px;
+    text-align: center;
+    background: none;
+    margin: 50px;
+    color: black;
+}
+
+.services-content blockquote{
+    padding: 35px;
+    padding-right: 30px;
+    margin: 14px;
+    margin-bottom: -5000px;
+    background: #fff;
+    line-height: 40px;
+    color: #787878;
+    border: 0.5px solid #787878;
+}
+
+.services-content h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: crimson;
+}
+
+.services-content blockquote:hover {
+    background: rgba(0, 0, 0, 0.055);
+    color: #000;
+    transition: transform 0.6s fade ease-out 0.3s;
+}
+
+.services-header h1{
+    text-align: center;
+    color: crimson;
+    font-size: 35px;
+}
+
+.services h1::after{
+    content: '';
+    background: crimson;
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto 5px;
+} 
+
+.services h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .services{
+        margin-top: 0;
+    }
+    .services-content{
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+
+    .services-content blockquote{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .services h2::after{
+        display: none;
+    }
+}
+/* END OF "SERVICES" SECTION */
+
+
+/* BEGINNING OF CONTACT SECTION */
+.contact h1{
+    color: crimson;
+    padding-left: 80vw;
+    padding-top: 70px;
+}
+
+.contact-header h1{
+    display: grid;
+}
+
+.contact-text{
+    display: grid;
+}
+
+.contact-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 80vw;
+    padding-bottom: 70px;
+}
+/* END OF CONTACT SECTION */
+
+
+/* BEGINNING OF BOOKING SECTION */
+.booking {
+    background: url(./IMAGES/amy-shamblen-xwM61TPMlYk-unsplash.jpg);
+    background-size: 1000px;
+    padding-top: 3vw;
+    padding-left: 7vw;
+    padding-bottom: 20vw;
+}
+
+.booking-header {
+    color: crimson;
+}
+
+.booking-content{
+    padding-right: 7vw;
+}
+
+.back-home h4{
+    padding-top: 7vw;
+    padding-right: 30vw;
+}
+
+.form{
+    padding-top: 3vw;
+}
